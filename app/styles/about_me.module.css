@@ -1,0 +1,149 @@
+.container{
+  background-color: #fafafa;
+}
+
+.about_me_cont{
+  padding: 6rem 0;
+  background-color: #fafafa;
+  margin: auto;
+  max-width: 80rem;
+  width: 92%;
+  color: black
+}
+
+.about_me_upper{
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about_me_header{
+  display: block;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  position: relative;
+  color: #111;
+}
+
+.about_me_header::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #7843E9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.about_me_subheader{
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.about_me_lower{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+}
+
+.about_me_left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.about_me_left_header{
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.about_me_left_description{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about_me_left_contact{
+  background: #7843E9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  padding: 1rem 3rem;
+}
+
+.about_me_right{
+  display: flex;
+  flex-direction: column;
+}
+
+.about_me_right_skills{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about_me_right_skill_title{
+  font-weight: 550;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about_me_right_skill_grouped_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_me_right_skill{
+  padding: 0.6rem 1.2rem;
+  margin-bottom: .2rem;
+  margin-right: .2rem;
+  font-size: 1.2rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+
+.important{
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+  .about_me_header{
+    font-size: 2.8rem;
+  }
+  .about_me_lower {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 68em) {
+  .about_me_cont {
+    padding: 5rem 1rem;
+  }
+}

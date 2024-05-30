@@ -1,0 +1,133 @@
+.container{
+    background-color: #ffffff;
+  }
+  
+.projects_cont{
+  padding: 6rem 0;
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 80rem;
+  width: 92%;
+  color: black
+}
+
+
+.projects_upper{
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects_header{
+  display: block;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  position: relative;
+  color: #111;
+}
+
+.projects_header::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #7843E9;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.projects_subheader{
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.projects_list{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.project_row{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 5rem;
+}
+
+.project_image{
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: 3px solid #e6e6e6 ;
+}
+
+.project_content{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project_header{
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.project_description{
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 40rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+
+.project_btn{
+  background: #7843E9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 68em) {
+  .projects_cont{
+    padding: 5rem 1rem;
+  }
+  
+  .project_row{
+    grid-template-columns: 1fr;
+  }
+
+  .project_content{
+    align-items: center;
+  }
+
+  .project_header{
+    text-align: center;
+  }
+
+  .project_description{
+    text-align: center;
+  }
+  
+}

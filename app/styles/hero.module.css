@@ -1,0 +1,155 @@
+.container{
+  background-color: #ffffff;
+  background: linear-gradient(to right, rgba(225, 225, 225, 0.9), rgba(225, 225, 225, 0.9)), url(../../public/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero_cont{
+  color: #fff;
+  max-width: 80rem;
+  width: 92%;
+  height: 100%;
+  position: relative;
+}
+
+.hero_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 65rem;
+  width: 92%;
+  display:flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hero_title{
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+}
+
+.hero_description{
+  margin: 2rem auto 0 auto;
+  max-width: 80rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.hero_btn_cont{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.hero_btn{
+  background: #7843E9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  padding: 1rem 3rem;
+}
+
+.hero_socials{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: .5rem;
+}
+
+.hero_social{
+  width: 5rem;
+}
+
+.hero_social:hover{
+  background-color: #7843e936;
+}
+
+.hero_social_link{
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  transition: background .3s;
+  border-radius: 5px;
+}
+
+.hero_social_icon{
+  width: 100%;
+}
+
+.mouse_scroll_cont{
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse{
+  width: 25px;
+  height: 40px;
+  border: 3px solid #333;
+  border-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mouse::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: 43%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero_socials{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hero_title{
+    font-size: 3rem;
+  }
+
+  .hero_description{
+    font-size: 1.2rem;
+  }
+}
