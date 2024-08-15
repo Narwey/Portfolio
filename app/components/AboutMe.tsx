@@ -13,7 +13,7 @@ export default function AboutMe() {
       "React.js/Next.js",
       "Angular",
       "Node.js/Express.js",
-      "Livewire"
+      "Livewire",
       "jQuery",  
       "DOM",  
       "Laravel", 
