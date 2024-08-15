@@ -9,14 +9,19 @@ export default function AboutMe() {
     "Frontend Backend": [ 
       "HTML/CSS",
       "TailwindCss",
-      "React/Next.js", 
+      "Bootstrap",
+      "React.js/Next.js",
+      "Angular",
+      "Node.js/Express.js",
+      "Livewire"
       "jQuery",  
       "DOM",  
       "Laravel", 
     ],
     "Programming languages": [
       "JavaScript/TypeScript",  
-      "PHP", 
+      "PHP",
+      "Java"
       "C/C++", 
       "SQL"
     ],
