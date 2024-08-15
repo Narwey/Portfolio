@@ -21,13 +21,13 @@ export default function AboutMe() {
     "Programming languages": [
       "JavaScript/TypeScript",  
       "PHP",
-      "Java"
+      "Java",
       "C/C++", 
-      "SQL"
+      "SQL",
     ],
     "Database": [
       "MySQL", 
-      "MongoDB"
+      "MongoDB",
     ]
   };
   
